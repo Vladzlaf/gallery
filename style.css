@@ -45,7 +45,7 @@ body, html  {
 }
 
 .slider__item {
-    max-height: 75vh;
+    max-height: 80vh;
     overflow: hidden;
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition);
@@ -79,4 +79,37 @@ body, html  {
     z-index: 2;
     transform: rotate(-15deg) scale(1.45);
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
+}
+
+.description {
+    position: absolute;
+    font-size: calc(var(--sizeindex) * .8);
+    top: 10vh;
+    left: 8vw;
+    max-width: 24vw;
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.logo {
+    font-size: calc(var(--sizeindex) * 3.6);
+    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description p {
+    opacity: .9;
+    transition: transform var(--transition);
+    transition-duration: 3s;
+}
+
+.description.hidden {
+    opacity: 0;
+    transform: translateY(5vh);
+}
+
+.description.hidden p {
+    transform: translateY(2vh);  
 }
