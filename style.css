@@ -94,7 +94,7 @@ body, html  {
     font-size: calc(var(--sizeindex) * 3.6);
     font-weight: 900;
     display: inline-block;
-    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet );
+    background: linear-gradient(45deg, #52ACFF, #FFE32C );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
